@@ -1,0 +1,677 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0px;
+  font-family: "Poppins";
+}
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: #072541;
+}
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 10px;
+  color: white;
+}
+.sidebar .logo img {
+  height: 40px;
+  margin-right: 0.5em;
+}
+
+.sidebar-elements {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.element .element-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.element .element-title img {
+  width: 1em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.element .element-title .element-title-head {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: white;
+  font-weight: 400;
+}
+.element .element-title .element-title-head img {
+  width: 2.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.element .element-title .element-title-head h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.element-body {
+  display: flex;
+  flex-direction: column;
+}
+.element-body-el {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 2.5em;
+  cursor: pointer;
+}
+.element-body-el img {
+  width: 1.5em;
+  margin-right: 0.5em;
+}
+.bodypage {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bodypage-title {
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  color: #072541;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.bodypage-title .title {
+  display: flex;
+  align-items: center;
+}
+
+.bodypage-title .return {
+  display: flex;
+  padding-right: 1em;
+  font-size: 40px;
+  color: #072541;
+}
+
+#return {
+  display: flex;
+  font-size: 55px;
+  color: #072541;
+  border-radius: 5px;
+}
+
+.bodypage form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodypage form .elementss {
+  display: flex;
+  width: 95%;
+  margin-top: 2em;
+  justify-content: space-between;
+  height: 17%;
+}
+
+.bodypage form .elementsbtn {
+  display: flex;
+}
+
+.bodypage form .elementsbtn button {
+  display: flex;
+  margin: 1em;
+  font-size: 17px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-weight: 400;
+  border-radius: 5px;
+  border: 0px;
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000ff;
+  color: white;
+  cursor: pointer;
+}
+
+#redors {
+  background-color: #ff0000;
+}
+
+.bodypage form .inputelement {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  flex-direction: column;
+}
+.bodypage form .inputelement .addgroup {
+  display: flex;
+  margin-top: 10px;
+  height: 40%;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bodypage form .inputelement .addgroup.set {
+  height: 25%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.bodypage form .inputelement .addgroup.set.add {
+  height: 40%;
+  display: flex;
+}
+
+.bodypage form .inputelement .addgroup.set p {
+  background-color: white;
+  box-shadow: none;
+  width: fit-content;
+}
+
+.bodypage form .inputelement .addgroup.set button {
+  width: 50%;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.bodypage form .inputelement .addgroup p {
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding-left: 0.2em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+  border-radius: 5px;
+}
+.bodypage form .inputelement .addgroup button {
+  width: 20%;
+  height: 100%;
+  color: white;
+  background-color: #58ff10;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 0.5em;
+}
+
+.bodypage form .inputelement label {
+  color: #072541;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bodypage form .inputelement input,
+.bodypage form .inputelement select,
+.bodypage form .inputelement textarea {
+  height: 40%;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-family: "Poppins";
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.bodypage form .inputelement input:focus,
+.bodypage form .inputelement select:focus,
+.bodypage form .inputelement textarea:focus {
+  border: 2px solid #0000ff;
+}
+
+.bodypage-title img,
+#iconchange {
+  height: 1.5em;
+  margin-right: 0.5em;
+  padding-left: 1em;
+}
+#iconchange {
+  font-size: 25px;
+}
+.StudentsList {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+}
+.StudentsList .top {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1em;
+}
+.StudentsList .top p {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.StudentsList .top .topbtn {
+  margin-right: 2em;
+  background-color: #072541;
+  color: white;
+  font-size: 14px;
+  padding: 0.7em;
+  width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.StudentsList .searchbare {
+  background-color: #072541;
+  color: white;
+  width: 97.8%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 1em;
+  border-radius: 10px;
+}
+.StudentsList .searchbare .search p {
+  margin-top: 0px;
+  font-size: 15px;
+}
+.StudentsList .searchbare .search {
+  margin-left: 1em;
+  width: 35%;
+}
+.StudentsList .searchbare .search #search {
+  border-radius: 5px;
+  border: none;
+  height: 2.5em;
+  width: 95%;
+  padding-left: 1em;
+  font-size: 13px;
+  font-family: "Poppins";
+}
+.StudentsList .searchbare .filter {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin-left: 2em;
+}
+.StudentsList .searchbare .filter p {
+  margin-top: 0px;
+  opacity: 0;
+}
+.StudentsList .searchbare .filter select {
+  width: 70%;
+  border: none;
+  height: 2.5em;
+  font-size: 13px;
+  font-family: "Poppins";
+  border-radius: 5px;
+}
+.StudentsList .searchbare .btn {
+  margin-top: 0px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.StudentsList .searchbare .btn p {
+  margin-top: 0px;
+  opacity: 0;
+}
+.StudentsList .searchbare .btn button {
+  width: 70%;
+  border: none;
+  height: 2.5em;
+  font-size: 13px;
+  font-family: "Poppins";
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.StudentsList .studentstable .top {
+  background-color: #072541;
+  width: 96.5%;
+  border: 2px solid #072541;
+  height: 1%;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.StudentsList .studentstable .tablehead {
+  width: 97.5%;
+  display: flex;
+  border-top: 2px solid #072541;
+  font-size: 15px;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+  color: white;
+  background-color: #072541;
+  border-radius: 5px;
+  margin-left: 1.2em;
+}
+
+.StudentsList .studentstable .tableelements {
+  width: 97.5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  height: 33.9em;
+  overflow-y: scroll;
+  margin-left: 1.2em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.StudentsList .studentstable .tableelements .student {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.StudentsList .studentstable .tablehead p {
+  width: 18%;
+  padding-left: 0.2em;
+}
+.StudentsList .studentstable .tablehead #sts {
+  width: 12%;
+}
+.StudentsList .studentstable .tablehead #acts {
+  width: 10%;
+  margin-right: 15px;
+}
+.StudentsList .studentstable .tablehead #fln {
+  width: 25%;
+}
+.StudentsList .studentstable .tablehead #nbr {
+  width: 14%;
+  margin-left: -5px;
+}
+.StudentsList .studentstable .tablehead #mail {
+  width: 22%;
+}
+.StudentsList .studentstable .tableelements .student p {
+  width: 18%;
+  padding-left: 0.2em;
+}
+.StudentsList .studentstable .tableelements .student #sts {
+  width: 12%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  height: 2em;
+}
+.StudentsList .studentstable .tableelements .student #stsunpayed {
+  width: 12%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  height: 2em;
+}
+.StudentsList .studentstable .tableelements .student #acts {
+  width: 11%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+}
+.StudentsList .studentstable .tableelements .student #acts img {
+  height: 20px;
+  cursor: pointer;
+}
+.StudentsList .studentstable .tableelements .student #fln {
+  width: 25%;
+}
+.StudentsList .studentstable .tableelements .student #nbr {
+  width: 14%;
+}
+.StudentsList .studentstable .tableelements .student #mail {
+  width: 22%;
+}
+
+.dashboardpls {
+  width: 90%;
+}
+#studentss {
+  color: #072541;
+  font-weight: 900;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#makeitbigger {
+  height: 30%;
+  margin-bottom: 1em;
+}
+#makeitbigger2 {
+  height: 75%;
+  padding: 5px;
+}
+
+#red {
+  background-color: red;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff0000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #58ff10;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(65px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.topflex {
+  display: flex;
+  align-items: center;
+}
+
+#error {
+  border: 2px solid #ff0000;
+}
+.deletebox{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  top: 28%;
+  left: 40%;
+  background-color: #fff;
+  width: 450px;
+  height: 350px;
+  border-radius: 5px ;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.grey{
+  background-color: grey;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.deletebox #alert{
+  color: #ff0000;
+  font-size: 60px;
+}
+
+.deletebox h4{
+  font-size: 20px;
+}
+
+.deletebox p{
+  margin-top: 0px;
+  font-weight: 700;
+  color: grey;
+  font-size: 13px;
+}
+
+.deletebox #mtop{
+  margin-top: -10px;
+}
+
+.deletebox button{
+  cursor: pointer;
+  width: 80%;
+  margin-top: 0.5em;
+  font-family: 'Poppins';
+  font-size: 17px;
+  padding: 0.2em;
+  border-radius: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 0px;
+  background-color: #ff0000;
+  color: white;
+}
+
+.deletebox #shadow{
+  background-color: white;
+  color: #000;
+ box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.flexit{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+
+.flexit select{
+  height: 100% !important;
+  width: 80%;
+}
+.flexit button{
+  margin-left: 5px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #072541;
+  color: white;
+  border: 0px;
+  font-family: 'Poppins';
+  margin-top: 10px !important;
+  cursor: pointer;
+  width: 20%;
+}
